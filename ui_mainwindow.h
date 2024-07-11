@@ -453,6 +453,11 @@ public:
     QPushButton *pushButton_14;
     QComboBox *comboBox_18;
     QLabel *label_101;
+    QFrame *frame_23;
+    QLabel *label_76;
+    QLabel *label_104;
+    QPushButton *sampling;
+    QPushButton *buffer;
     QWidget *tab_9;
     QFrame *frame_17;
     QPushButton *pushButton_15;
@@ -575,6 +580,10 @@ public:
     QLabel *label_98;
     QLabel *label_99;
     QLabel *label_100;
+    QLabel *label_105;
+    QLabel *label_106;
+    QLabel *label_107;
+    QLabel *label_108;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -4499,6 +4508,23 @@ public:
         label_101->setObjectName(QStringLiteral("label_101"));
         label_101->setGeometry(QRect(20, 180, 141, 17));
         label_101->setAlignment(Qt::AlignCenter);
+        frame_23 = new QFrame(tab_8);
+        frame_23->setObjectName(QStringLiteral("frame_23"));
+        frame_23->setGeometry(QRect(220, 40, 251, 291));
+        frame_23->setFrameShape(QFrame::StyledPanel);
+        frame_23->setFrameShadow(QFrame::Raised);
+        label_76 = new QLabel(frame_23);
+        label_76->setObjectName(QStringLiteral("label_76"));
+        label_76->setGeometry(QRect(13, 50, 101, 17));
+        label_104 = new QLabel(frame_23);
+        label_104->setObjectName(QStringLiteral("label_104"));
+        label_104->setGeometry(QRect(13, 91, 64, 17));
+        sampling = new QPushButton(frame_23);
+        sampling->setObjectName(QStringLiteral("sampling"));
+        sampling->setGeometry(QRect(124, 46, 90, 25));
+        buffer = new QPushButton(frame_23);
+        buffer->setObjectName(QStringLiteral("buffer"));
+        buffer->setGeometry(QRect(124, 87, 90, 25));
         tabWidget_2->addTab(tab_8, QString());
         tab_9 = new QWidget();
         tab_9->setObjectName(QStringLiteral("tab_9"));
@@ -5850,7 +5876,7 @@ public:
         page_15->setObjectName(QStringLiteral("page_15"));
         pushButton_10 = new QPushButton(page_15);
         pushButton_10->setObjectName(QStringLiteral("pushButton_10"));
-        pushButton_10->setGeometry(QRect(330, 400, 101, 41));
+        pushButton_10->setGeometry(QRect(330, 430, 101, 41));
         pushButton_10->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -5884,7 +5910,7 @@ public:
 "}"));
         frame_22 = new QFrame(page_15);
         frame_22->setObjectName(QStringLiteral("frame_22"));
-        frame_22->setGeometry(QRect(130, 30, 521, 341));
+        frame_22->setGeometry(QRect(130, 20, 521, 401));
         frame_22->setStyleSheet(QLatin1String("QFrame#frame_22 { \n"
 "\n"
 "\n"
@@ -5905,52 +5931,64 @@ public:
         label_79->setStyleSheet(QStringLiteral("background-color:rgab(0,0,0,0);"));
         label_85 = new QLabel(frame_22);
         label_85->setObjectName(QStringLiteral("label_85"));
-        label_85->setGeometry(QRect(40, 305, 150, 17));
+        label_85->setGeometry(QRect(40, 290, 150, 17));
         label_88 = new QLabel(frame_22);
         label_88->setObjectName(QStringLiteral("label_88"));
-        label_88->setGeometry(QRect(200, 200, 271, 17));
+        label_88->setGeometry(QRect(200, 185, 271, 17));
         label_82 = new QLabel(frame_22);
         label_82->setObjectName(QStringLiteral("label_82"));
-        label_82->setGeometry(QRect(40, 200, 150, 17));
+        label_82->setGeometry(QRect(40, 185, 150, 17));
         label_83 = new QLabel(frame_22);
         label_83->setObjectName(QStringLiteral("label_83"));
-        label_83->setGeometry(QRect(40, 235, 150, 17));
+        label_83->setGeometry(QRect(40, 220, 150, 17));
         label_86 = new QLabel(frame_22);
         label_86->setObjectName(QStringLiteral("label_86"));
-        label_86->setGeometry(QRect(200, 60, 271, 17));
+        label_86->setGeometry(QRect(200, 45, 271, 17));
         label_90 = new QLabel(frame_22);
         label_90->setObjectName(QStringLiteral("label_90"));
-        label_90->setGeometry(QRect(200, 270, 271, 17));
+        label_90->setGeometry(QRect(200, 255, 271, 17));
         label_91 = new QLabel(frame_22);
         label_91->setObjectName(QStringLiteral("label_91"));
-        label_91->setGeometry(QRect(200, 305, 271, 17));
+        label_91->setGeometry(QRect(200, 290, 271, 17));
         label_89 = new QLabel(frame_22);
         label_89->setObjectName(QStringLiteral("label_89"));
-        label_89->setGeometry(QRect(200, 235, 271, 17));
+        label_89->setGeometry(QRect(200, 220, 271, 17));
         label_87 = new QLabel(frame_22);
         label_87->setObjectName(QStringLiteral("label_87"));
-        label_87->setGeometry(QRect(200, 130, 271, 17));
+        label_87->setGeometry(QRect(200, 115, 271, 17));
         label_80 = new QLabel(frame_22);
         label_80->setObjectName(QStringLiteral("label_80"));
-        label_80->setGeometry(QRect(40, 60, 150, 17));
+        label_80->setGeometry(QRect(40, 45, 150, 17));
         label_81 = new QLabel(frame_22);
         label_81->setObjectName(QStringLiteral("label_81"));
-        label_81->setGeometry(QRect(40, 130, 150, 17));
+        label_81->setGeometry(QRect(40, 115, 150, 17));
         label_84 = new QLabel(frame_22);
         label_84->setObjectName(QStringLiteral("label_84"));
-        label_84->setGeometry(QRect(40, 270, 150, 17));
+        label_84->setGeometry(QRect(40, 255, 150, 17));
         label_97 = new QLabel(frame_22);
         label_97->setObjectName(QStringLiteral("label_97"));
-        label_97->setGeometry(QRect(40, 95, 150, 17));
+        label_97->setGeometry(QRect(40, 80, 150, 17));
         label_98 = new QLabel(frame_22);
         label_98->setObjectName(QStringLiteral("label_98"));
-        label_98->setGeometry(QRect(200, 95, 271, 17));
+        label_98->setGeometry(QRect(200, 80, 271, 17));
         label_99 = new QLabel(frame_22);
         label_99->setObjectName(QStringLiteral("label_99"));
-        label_99->setGeometry(QRect(200, 165, 271, 17));
+        label_99->setGeometry(QRect(200, 150, 271, 17));
         label_100 = new QLabel(frame_22);
         label_100->setObjectName(QStringLiteral("label_100"));
-        label_100->setGeometry(QRect(40, 165, 150, 17));
+        label_100->setGeometry(QRect(40, 150, 150, 17));
+        label_105 = new QLabel(frame_22);
+        label_105->setObjectName(QStringLiteral("label_105"));
+        label_105->setGeometry(QRect(40, 325, 150, 17));
+        label_106 = new QLabel(frame_22);
+        label_106->setObjectName(QStringLiteral("label_106"));
+        label_106->setGeometry(QRect(200, 325, 271, 17));
+        label_107 = new QLabel(frame_22);
+        label_107->setObjectName(QStringLiteral("label_107"));
+        label_107->setGeometry(QRect(40, 360, 150, 17));
+        label_108 = new QLabel(frame_22);
+        label_108->setObjectName(QStringLiteral("label_108"));
+        label_108->setGeometry(QRect(200, 360, 271, 17));
         stackedWidget->addWidget(page_15);
         MainWindow->setCentralWidget(centralWidget);
 
@@ -5958,8 +5996,8 @@ public:
         QObject::connect(dateTimeEdit_3, SIGNAL(dateChanged(QDate)), calendarWidget, SLOT(setSelectedDate(QDate)));
         QObject::connect(calendarWidget, SIGNAL(clicked(QDate)), dateTimeEdit_3, SLOT(setDate(QDate)));
 
-        stackedWidget->setCurrentIndex(10);
-        tabWidget_2->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(8);
+        tabWidget_2->setCurrentIndex(0);
         tabWidget->setCurrentIndex(5);
 
 
@@ -6359,6 +6397,10 @@ public:
         comboBox_18->setItemText(1, QApplication::translate("MainWindow", "YES", nullptr));
 
         label_101->setText(QApplication::translate("MainWindow", "Display Negative", nullptr));
+        label_76->setText(QApplication::translate("MainWindow", "No.of Samples", nullptr));
+        label_104->setText(QApplication::translate("MainWindow", "Buffer", nullptr));
+        sampling->setText(QString());
+        buffer->setText(QString());
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_8), QApplication::translate("MainWindow", "ADC", nullptr));
         pushButton_15->setText(QApplication::translate("MainWindow", "Forward", nullptr));
         pushButton_16->setText(QApplication::translate("MainWindow", "Backward", nullptr));
@@ -6430,7 +6472,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "LIS", nullptr));
         pushButton_33->setText(QApplication::translate("MainWindow", "Check for updates", nullptr));
         label_53->setText(QApplication::translate("MainWindow", "Current Version", nullptr));
-        label_67->setText(QApplication::translate("MainWindow", "V2.1.0", nullptr));
+        label_67->setText(QApplication::translate("MainWindow", "V2.1.1", nullptr));
         label_68->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Version", nullptr));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget_2->horizontalHeaderItem(0);
@@ -6484,10 +6526,10 @@ public:
         pushButton_51->setText(QApplication::translate("MainWindow", "Print Table", nullptr));
         pushButton_10->setText(QApplication::translate("MainWindow", "Skip", nullptr));
         label_79->setText(QApplication::translate("MainWindow", "Initializing Please Wait..", nullptr));
-        label_85->setText(QApplication::translate("MainWindow", "Checking 630nm", nullptr));
+        label_85->setText(QString());
         label_88->setText(QString());
-        label_82->setText(QApplication::translate("MainWindow", "Checking 405nm", nullptr));
-        label_83->setText(QApplication::translate("MainWindow", "Checking 450nm", nullptr));
+        label_82->setText(QString());
+        label_83->setText(QString());
         label_86->setText(QString());
         label_90->setText(QString());
         label_91->setText(QString());
@@ -6495,11 +6537,15 @@ public:
         label_87->setText(QString());
         label_80->setText(QApplication::translate("MainWindow", "Checking Motor Home", nullptr));
         label_81->setText(QApplication::translate("MainWindow", "Checking ADC Com", nullptr));
-        label_84->setText(QApplication::translate("MainWindow", "Checking 490nm", nullptr));
+        label_84->setText(QString());
         label_97->setText(QApplication::translate("MainWindow", "Checking Motor Index", nullptr));
         label_98->setText(QString());
         label_99->setText(QString());
         label_100->setText(QApplication::translate("MainWindow", "Checking LED Com", nullptr));
+        label_105->setText(QString());
+        label_106->setText(QString());
+        label_107->setText(QString());
+        label_108->setText(QString());
     } // retranslateUi
 
 };
