@@ -5996,8 +5996,8 @@ public:
         QObject::connect(dateTimeEdit_3, SIGNAL(dateChanged(QDate)), calendarWidget, SLOT(setSelectedDate(QDate)));
         QObject::connect(calendarWidget, SIGNAL(clicked(QDate)), dateTimeEdit_3, SLOT(setDate(QDate)));
 
-        stackedWidget->setCurrentIndex(8);
-        tabWidget_2->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(6);
+        tabWidget_2->setCurrentIndex(1);
         tabWidget->setCurrentIndex(5);
 
 
